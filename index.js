@@ -8,7 +8,7 @@ var Emitter = require('events').EventEmitter,
     util = require('util'),
     path = require('path'),
     glob = require('glob'),
-    render = require('node-sass').render,
+    render = require('node-sass/lib/render'),
     stdin = require('get-stdin'),
     fs = require('fs');
 
@@ -238,7 +238,6 @@ function watch(options, emitter) {
   for (var i in graph.index) {
     paths.push(i);
   }
-
   var watcher = chokidar.watch(paths);
   watcher.on('error', emitter.emit.bind(emitter, 'error'));
 
