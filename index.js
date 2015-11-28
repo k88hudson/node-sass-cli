@@ -17,7 +17,6 @@ var Emitter = require('events').EventEmitter,
  */
 
 var cli = meow({
-  pkg: '../package.json',
   version: process.sass.versionInfo,
   help: [
     'Usage',
