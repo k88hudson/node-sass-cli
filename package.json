@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "bin": {
-    "nsass": "index.js1"
+    "nsass": "index.js"
   },
   "author": "",
   "license": "MPL-2.0",
